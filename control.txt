@@ -1,0 +1,3 @@
+DIR www/tablet
+UPD www/tablet/index-example.html
+UPD www/tablet/test.html
