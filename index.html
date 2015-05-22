@@ -59,54 +59,73 @@
 
 <div class="gridster">
 <ul>
+
+ 
+
 <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-    <header>TREND</header>
+    <header>Pool</header>
     <div data-type="symbol" data-device="dummy1" data-icons='["fa-arrow-up","fa-arrow-right","fa-arrow-down"]' data-on-colors='["#32a054","#6666cc","#ad3333"]' data-get-on='["Wert1","Wert2","Wert3"]' class="blink"></div>
     <div data-type="label" class="small narrow darker">Status</div>
 </li>
-<li data-row="2" data-col="1" data-sizex="1" data-sizey="4">
-        <header>GARTEN</header>
-        <div data-type="switch" data-device="GartenLicht" class="cell" ></div>
-        <div data-type="label" class="cell">Licht</div>
-        <div data-type="symbol" data-device="Eingangstuer" class="cell"></div>
-        <div data-type="label" class="cell">T&#252;r</div>
-        <div data-type="label" data-device="OutTemp" data-part="2" data-limits='[-73,10,23]' data-colors='["#6699FF","#AA6900","#FF0000"]' data-unit="%B0C%0A" class="cell bigger thin top-space-2x"></div>
-        <div data-type="label" class="cell">Temperatur</div>
-        <div data-type="label" class="cell darker top-space">Heute</div>
-        <div data-type="weather" data-device="AgroWeather" data-get="fc0_weatherDay" class="cell big"></div>
-        <div data-type="label" data-device="AgroWeather" data-get="fc0_weatherDay" class="cell narrow"></div>
-        <div data-type="label" data-device="AgroWeather" data-get="fc0_tempMax" data-unit="%B0C%0A" class="cell large"></div>
-        <div data-type="label" class="cell darker top-space">Morgen</div>
-        <div data-type="weather" data-device="AgroWeather" data-get="fc1_weatherDay" class="cell big"></div>
-        <div data-type="label" data-device="AgroWeather" data-get="fc1_weatherDay" class="cell narrow"></div>
-        <div data-type="label" data-device="AgroWeather" data-get="fc1_tempMax" data-unit="%B0C%0A" class="cell large"></div>
+<li data-row="2" data-col="1" data-sizex="1" data-sizey="2">
+           <header>MENU</header>
+    <div class="cell">
+        <div data-type="pagetab" data-url="index.html"  data-icon="fa-life-ring" class="cell"></div>
+        <div data-type="pagetab" data-url="Solor.html" data-icon="fa-sun-o" class="cell"></div>
+        <div data-type="pagetab" data-url="Sandfilter.html" data-icon="fa-wrench" class="cell"></div>
+        <div data-type="pagetab" data-url="Pool_Plot.html" data-icon="fa-line-chart" class="cell"></div>
+    </div>
+
 </li>
-<li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
-        <header>Hub_Test_Check</header>
-        <div data-type="thermostat" data-device="BadHeizung_Clima" data-valve="ValvePosition" class="cell left"></div>
-        <div class="cell right">
-                <div data-type="symbol" data-device="BadFenster" class="narrow"></div>
-                <div data-type="label" class="narrow darker small">Fenster</div>
-        </div>
-</li>
+
 <li data-row="1" data-col="3" data-sizex="2" data-sizey="1">
-        <header>SCHLAFZIMMER</header>
-        <div data-type="thermostat" data-device="SchlafzimmerHeizung_Clima" data-valve="ValvePosition" class="cell left"></div>
-        <div class="cell right">
-                <div data-type="symbol" data-device="SchlafzimmerFenster" class="narrow"></div>
-                <div data-type="label" class="narrow darker small">Fenster</div>
-        </div>
+        <header>Solarpumpe</header>
+       <div data-type="symbol" data-device="Test_H" 
+     data-get-on='["on","off"]' 
+     data-icons='["fa fa-refresh fa-spin","fa-refresh"]' 
+     data-on-colors='["SeaGreen","IndianRed"]' 
+     class="cell big">
+</div>
 </li>
 <li data-row="1" data-col="4" data-sizex="2" data-sizey="1">
-        <header>KINDERZIMMER</header>
-        <div data-type="thermostat" data-device="KinderzimmerHeizung_Clima" data-valve="ValvePosition" class="cell left"></div>
-        <div class="cell right">
-                <div data-type="symbol" data-device="KinderzimmerFenster" class="narrow"></div>
-                <div data-type="label" class="narrow darker small">Fenster</div>
-        </div>
+        <header>Pooltemperatur</header>
+   <div data-type="thermostat" data-device="77Thermo" 
+    data-get="temperature2" 
+    data-fgColor="#bbbbbb" 
+    class="cell readonly">
+</div>
 </li>
+
+<li data-row="1" data-col="4" data-sizex="2" data-sizey="1">
+        <header>Technikraum_Temp</header>
+   <div data-type="thermostat" data-device="03Thermo" 
+    data-get="temperature" 
+    data-fgColor="#bbbbbb" 
+    class="cell readonly">
+</div>
+</li>
+
+<li data-row="1" data-col="4" data-sizex="2" data-sizey="1">
+        <header>Solar_Carportdach</header>
+   <div data-type="thermostat" data-device="00_Thermo" 
+    data-get="temperature" 
+    data-fgColor="#bbbbbb" 
+    class="cell readonly">
+</div>
+</li>
+
+<li data-row="1" data-col="4" data-sizex="2" data-sizey="1">
+        <header>Solar_Output</header>
+   <div data-type="thermostat" data-device="03Thermo" 
+    data-get="temperature2" 
+    data-fgColor="#bbbbbb" 
+    class="cell readonly">
+</div>
+</li>
+
+
 <li data-row="1" data-col="8" data-sizex="1" data-sizey="1">
-        <header>GALERIE</header>
+        <header>Github_check</header>
         <div data-type="switch" data-device="GalerieLicht" class="cell"></div>
         <div data-type="label" class="cell">Licht</div>
 </li>
@@ -194,14 +213,22 @@
        </div>
      </div>
 </li>
-<li data-row="2" data-col="8" data-sizex="1" data-sizey="4">
-        <header>LIGHTS</header>
-        <div data-type="slider" data-device='Testschalter' data-min="10" data-max="90" class="cell mini" ></div>
-        <div data-type="label" class="cell">Light1</div>
-        <div data-type="volume" data-device="HUEDevice1" data-min="0" data-max="65353" data-get="hue" data-set="hue" class="hue-tick mini top-space-3x" ></div>
-        <div data-type="label" class="cell">Color</div>
-        <div data-type="dimmer" data-device="HUEDevice1" data-get-on="!off" data-get-off="off" data-set="pct" class="cell" ></div>
-        <div data-type="label" class="cell">Hell</div>
+<li data-row="2" data-col="8" data-sizex="1" data-sizey="2">
+        <header>Umschalter Solar Auto</header>
+        <div class="cell left">
+ <div data-type="switch" data-device="Solar" 
+      data-get-off="((?!On).)*" 
+      data-get-on="On" class="cell" ></div>
+ <div data-type="label" class="cell">On</div>
+ <div data-type="switch" data-device="Solar" 
+      data-get-off="((?!Auto).)*" 
+      data-get-on="Auto" class="cell" ></div>
+ <div data-type="label" class="cell">Auto</div>
+ <div data-type="switch" data-device="Solar" 
+      data-get-off="((?!Off).)*" 
+      data-get-on="Off" class="cell" ></div>
+ <div data-type="label" class="cell">Off</div>
+</div>
 </li>
 </ul>
 </div>
